@@ -1,0 +1,36 @@
+import board
+import digitalio
+import netifaces as ni
+from time import sleep
+from PIL import Image, ImageDraw, ImageFont
+import adafruit_ssd1306
+
+# Set up the INA219 sensor
+i2c = board.I2C()
+ina219 = INA219(i2c, 0x44)
+
+# Get a voltage reading from the INA219
+def getVoltage():
+    ##########################################
+    # Task: Write your own code here to read and return the voltage reading from L1_ina
+    #       You must import the necessary python file in order to do this.
+    #       Try giving the import an alias similarily done in line 20 above.
+    #       This makes it convenient in referencing the import for use.
+    
+    #       The general format for retrieving the return of a function from another file is:
+    #       variable_name = filename_or_alias.function_name()
+    #       You can reference lines 34 through 36 as some examples.
+    
+    #       You should be able to accomplish this task with one line of code.
+    #####################\####################
+    return # Be sure to return your variable name for your getVoltage()
+
+def tmpFile(value, fileName):                               # this function takes a 2-element array called val
+    txt = open("/tmp/" + fileName, 'w+')                    # file with specified name
+    myValue = round(value, 2)
+    txt.write(str(myValue))
+    txt.close()
+
+tmpFile(getVoltage, "voltage") 
+
+sleep(1)

@@ -1,0 +1,2 @@
+[{"id":"34090aed.b3110e","type":"ui_gauge","z":"53566a7.f4b3394","name":"","group":"b2f3c387.66a8b","order":0,"width":0,"height":0,"gtype":"gage","title":"WALL-E Voltage","label":"V","format":"{{value}}","min":0,"max":"15","colors":["#00b500","#e6e600","#ca3838"],"seg1":"","seg2":"","x":640,"y":120,"wires":[]},{"id":"b2f3c387.66a8b","type":"ui_group","name":"Voltage","tab":"404906d4.161f4","order":1,"disp":true,"width":"6","collapse":false},{"id":"404906d4.161f4","type":"ui_tab","name":"Lab2","icon":"dashboard","order":1,"disabled":false,"hidden":false}]
+
